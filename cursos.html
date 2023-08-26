@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Diseño y nuevos medios" />
+        <link href="style.css" rel="stylesheet" />
+        <title>&#x26f1; Inteligencia artificial</title> <!-- Cambio titulo -->
+    </head>
+    <body style="background:#008C5B">
+        <header>
+            <h1>
+                <a href="index.html">Sofía</a> <!-- Cambio nombre -->
+                <a href="cursos.html" style="text-decoration: line-through">CURSOS</a>
+                <a href="emoji.html">EMOJI</a>
+                <a href="swiftie.html">SWIFTIE</a>
+            </h1>
+        </header>
+        <main>
+            <div id="aqui"></div>
+        </main>
+        <footer>
+            <p><a href="https://github.com/profesorfaco/dno037-2023-2">Diseño y nuevos medios</a> <a href="https://github.com/profesorfaco/dno037-2023-2/tree/main/clase-03">23 de agosto, 2023</a></p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js" integrity="sha512-bcfltY+lNLlNxz38yBBm/HLaUB1gTV6I0e+fahbF9pS6roIdzUytozWdnFV8ZnM6cSAG5EbmO0ag0a/fLZSG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            //cursos que me llaman la atención
+            var data = {
+                name: "Inteligencia Artificial",
+                code: "IIC2613",
+                about: "Este curso enseña los conceptos fundamentales de inteligencia artificial y las metodologías utilizadas en este ámbito. En particular, el curso abarca las técnicas clásicas de resolución de problemas mediante la lógica deductiva, algoritmos de búsqueda, y técnicas de planificación. El curso también cubre los aspectos fundamentales de aprendizaje automático."
+            }
+            var cursosJSON = [
+                {
+                    "Nombre": "Curso 1",
+                    "Codigo": "ABC3001",
+                    "Descripcion": "Me gusta el ramo ya que..."
+                },
+                {
+                    "Nombre": "Curso 2",
+                    "Codigo": "ABC3002",
+                    "Descripcion": "Me gusta el ramo ya que..."
+                },
+                {
+                    "Nombre": "Curso 3",
+                    "Codigo": "ABC3003",
+                    "Descripcion": "Me gusta el ramo ya que..."
+                },
+                {
+                    "Nombre": "Curso 4",
+                    "Codigo": "ABC3004",
+                    "Descripcion": "Me gusta el ramo ya que..."
+                },
+                {
+                    "Nombre": "Curso 5",
+                    "Codigo": "ABC3005",
+                    "Descripcion": "Me gusta el ramo ya que..."
+                }
+            ];
+
+            function setup() {
+                noCanvas();
+                console.log(data);
+                var x = 0;
+                while (x < 5){
+                    createElement("dl", "<dt>" + cursosJSON[x].Nombre + " (" + cursosJSON[x].Codigo + ")</dt><dd>" + cursosJSON[x].Descripcion + "</dd>").parent("aqui");
+                    x++;
+                }
+            }
+        </script>
+    </body>
+</html>
