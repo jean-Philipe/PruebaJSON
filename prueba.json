@@ -1,0 +1,27 @@
+[
+    {
+        "Nombre": "Curso 1",
+        "Codigo": "ABC3001",
+        "Descripcion": "Me gusta el ramo ya que..."
+    },
+    {
+        "Nombre": "Curso 2",
+        "Codigo": "ABC3002",
+        "Descripcion": "Me gusta el ramo ya que..."
+    },
+    {
+        "Nombre": "Curso 3",
+        "Codigo": "ABC3003",
+        "Descripcion": "Me gusta el ramo ya que..."
+    },
+    {
+        "Nombre": "Curso 4",
+        "Codigo": "ABC3004",
+        "Descripcion": "Me gusta el ramo ya que..."
+    },
+    {
+        "Nombre": "Curso 5",
+        "Codigo": "ABC3005",
+        "Descripcion": "Me gusta el ramo ya que..."
+    }
+]
